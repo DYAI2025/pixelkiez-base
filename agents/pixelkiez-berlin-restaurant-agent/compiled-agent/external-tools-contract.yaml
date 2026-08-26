@@ -1,0 +1,16 @@
+external_tools:
+  get_available_slots:
+    deployment_status: UNVERIFIED
+    inputs: [date_range, duration, timezone, consultant_id]
+    outputs: [slot_ids, display_times]
+    side_effect: false
+  book_meeting:
+    deployment_status: UNVERIFIED
+    inputs: [confirmed_slot_id, prospect_name, contact_channel, company, meeting_reason, idempotency_key]
+    outputs: [booking_id, confirmed_time, status]
+    side_effect: true
+    requires_explicit_confirmation: true
+  crm_write:
+    deployment_status: UNVERIFIED
+    side_effect: true
+    permission_boundary: REQUIRED_BEFORE_IMPLEMENTATION

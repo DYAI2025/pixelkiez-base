@@ -1,0 +1,13 @@
+﻿Kategorie,Name,HEX-Code,RGB-Werte,Verwendungszweck
+Primärfarben,Weiß,#FFFFFF,"(255, 255, 255)",Standardhintergrund für Dokumente und Elemente.
+Primärfarben,Hellgrau,#F5F5F5,"(245, 245, 245)",Alternativhintergrund für Absätze oder Boxen.
+Primärfarben,Mittelgrau,#E0E0E0,"(224, 224, 224)",Rahmen für Grafiken oder trennende Linien.
+Primärfarben,Dunkelgrau,#1F2937,"(31, 41, 55)",Primärer Text und Haupttitel.
+Primärfarben,Dunkelgrau (Leichter),#333333,"(51, 51, 51)",Sekundärer Text oder Details.
+Primärfarben,Dunkelgrau (Sehr Dunkel),#111827,"(17, 24, 39)","Sehr spezifische, extreme Betonung."
+Sekundärfarben,Blaue Akzentfarbe,#1E90FF,"(30, 144, 255)","Hyperlinks, interaktive Elemente, farbige Balken in Diagrammen."
+Sekundärfarben,Grüne Akzentfarbe,#00C853,"(0, 200, 83)","Positive Trends, Erfolgsmetriken."
+Sekundärfarben,Rote Akzentfarbe,#FF3366,"(255, 51, 102)","Negative Trends, Bereiche der Verbesserung."
+Dunkle Akzentfarben,Dunkelblau,#1E3A8A,"(30, 58, 138)","Titel (H1, H2), wichtige Überschriften."
+Dunkle Akzentfarben,Dunkelgrau,#1F2937,"(31, 41, 55)","(Wiederholt für Konsistenz, ist Haupttextfarbe)."
+Dunkle Akzentfarben,Dunkler Erdton,#2C1812,"(44, 24, 18)","Spezifische, stark hervorgehobene Elemente."

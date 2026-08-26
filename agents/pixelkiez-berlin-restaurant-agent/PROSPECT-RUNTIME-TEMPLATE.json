@@ -1,0 +1,13 @@
+{
+  "company": "REQUIRED_REAL_RESTAURANT_NAME",
+  "website": "https://REQUIRED_REAL_WEBSITE",
+  "role": "REQUIRED_OR_UNKNOWN",
+  "locale": "de-DE",
+  "contact_name": null,
+  "lead_source": "REQUIRED_EXTERNALLY_APPROVED_SOURCE",
+  "compliance_status": "REQUIRED_EXTERNAL_DECISION",
+  "do_not_contact": false,
+  "validated_audit_packet": "REQUIRED_FILE_REFERENCE",
+  "meeting_offer": "REQUIRED_APPROVED_OFFER",
+  "calendar_capability": "REQUIRED_VERIFIED_STATUS"
+}

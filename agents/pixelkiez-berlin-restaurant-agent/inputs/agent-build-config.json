@@ -1,0 +1,48 @@
+{
+  "build_id": "PIXELKIEZ-BERLIN-RESTAURANT-VOICE-AGENT-V1-SIM",
+  "company_contract_version": "2026-08-26-public-plus-project-contract",
+  "agent_display_name": "Pixelkiez KI-Assistent",
+  "output_language": "de",
+  "prospect": {
+    "company": "SIMULATION - Berliner Restaurantbetrieb",
+    "website": "https://restaurant-simulation.invalid",
+    "role": "Inhaber oder Geschaeftsfuehrung",
+    "locale": "de-DE",
+    "contact_name": null
+  },
+  "campaign": {
+    "campaign_id": "PK-BERLIN-RESTAURANTS-V1",
+    "lead_source_current": "MISSING - konkrete Leadquelle muss extern geprueft und freigegeben werden",
+    "website_role": "lokale Auffindbarkeit, Speisekarte, Vertrauen und Reservierungs-/Kontaktweg",
+    "primary_customer_type": "B2C-Gaeste des angerufenen B2B-Restaurantbetriebs"
+  },
+  "compliance": {
+    "compliance_status": "LEGAL_REVIEW_REQUIRED",
+    "do_not_contact": false,
+    "lead_source": "MISSING - konkrete Leadquelle muss extern geprueft und freigegeben werden",
+    "jurisdiction": "DE",
+    "contact_type": "B2B",
+    "ai_disclosure_required": true,
+    "recording_status": "OFF"
+  },
+  "meeting": {
+    "offer_label": "Website-Analyse mit einem Pixelkiez-Berater",
+    "timezone": "Europe/Berlin",
+    "consultant_id": null,
+    "duration_minutes": null
+  },
+  "tool_capabilities": {
+    "calendar": "UNVERIFIED",
+    "crm": "UNVERIFIED",
+    "transfer": "UNVERIFIED",
+    "voicemail": "UNVERIFIED"
+  },
+  "conversation_settings": {
+    "status": "DRAFT_REQUIRES_ELEVENLABS_TUNING",
+    "language": "de-DE",
+    "tone": "kurz, sachlich, freundlich, nicht draengend",
+    "turn_policy": "eine Hauptfrage pro Turn; keine langen Audit-Monologe",
+    "restaurant_context": "Stoerungen im Servicebetrieb minimieren; Busy-Signal sofort respektieren",
+    "recording": "OFF"
+  }
+}

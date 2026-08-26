@@ -1,0 +1,15 @@
+{
+  "finding_id": "REQUIRED",
+  "dimension": "conversion|comprehension|discoverability|trust|recruiting|service_efficiency",
+  "evidence_class": "VERIFIED_FACT|SUPPORTED_INFERENCE|HYPOTHESIS|UNKNOWN",
+  "observation": "REQUIRED_OBSERVATION",
+  "evidence_pointer": "REQUIRED_POINTER",
+  "confidence": 0.0,
+  "possible_relevance": "CAUTIOUS_RELEVANCE_ONLY",
+  "allowed_spoken_form": "ONE_SHORT_EVIDENCE_BOUND_SENTENCE_PLUS_ONE_RELEVANCE_QUESTION",
+  "prohibited_claims": [
+    "NO_INVENTED_REVENUE_LOSS",
+    "NO_INVENTED_RANKING",
+    "NO_GUARANTEED_UPLIFT"
+  ]
+}

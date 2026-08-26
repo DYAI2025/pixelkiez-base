@@ -1,0 +1,102 @@
+{
+  "audit_id": "AUD-SIM-BERLIN-RESTAURANT-001",
+  "company": "SIMULATION - Berliner Restaurantbetrieb",
+  "url": "https://restaurant-simulation.invalid",
+  "audit_date": "2026-08-26",
+  "method_scope": [
+    "synthetische Testfixture fuer Agenten-Simulation",
+    "first-viewport review",
+    "navigation and reservation-path review"
+  ],
+  "overall_score": null,
+  "score_scale": null,
+  "score_method_status": "NOT_USED",
+  "strengths": [
+    {
+      "id": "S1",
+      "observation": "Adresse, Telefonnummer und Oeffnungszeiten sind in der synthetischen Testfixture sichtbar.",
+      "evidence_pointer": "simulation/restaurant-fixture.html#kontakt",
+      "confidence": 1.0
+    }
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "dimension": "conversion",
+      "evidence_class": "VERIFIED_FACT",
+      "observation": "Im ersten sichtbaren Bereich der synthetischen Testfixture gibt es keinen direkten Link oder Button zur Tischreservierung.",
+      "evidence_pointer": "simulation/restaurant-fixture.html#hero",
+      "confidence": 1.0,
+      "priority": "HIGH",
+      "possible_relevance": "Falls Reservierungen ein wichtiger Gaesteweg sind, kann die Sichtbarkeit des Reservierungswegs fuer den Betrieb relevant sein.",
+      "allowed_spoken_form": "Auf der Startseite konnten wir im ersten sichtbaren Bereich keinen direkten Reservierungsweg erkennen. Ist die Website fuer Tischreservierungen bei Ihnen relevant?",
+      "prohibited_claims": [
+        "Dadurch verlieren Sie Reservierungen.",
+        "Das kostet Sie Umsatz.",
+        "Ihre Conversion ist schlecht."
+      ],
+      "terminology_level": "plain",
+      "hook_features": {
+        "likely_business_relevance": 0.9,
+        "phone_explainability": 0.95,
+        "actionability": 0.9,
+        "specificity": 0.95,
+        "sensitivity_risk": 0.1,
+        "technical_complexity": 0.05
+      }
+    },
+    {
+      "id": "F2",
+      "dimension": "comprehension",
+      "evidence_class": "VERIFIED_FACT",
+      "observation": "Der erste sichtbare Bereich der synthetischen Testfixture nennt keinen konkreten Kuechenstil oder ein klar abgegrenztes Restaurantkonzept.",
+      "evidence_pointer": "simulation/restaurant-fixture.html#hero",
+      "confidence": 1.0,
+      "priority": "MEDIUM",
+      "possible_relevance": "Neue Gaeste koennten fuer die schnelle Einordnung des Angebots zusaetzliche Informationen benoetigen.",
+      "allowed_spoken_form": "Im ersten sichtbaren Bereich konnten wir den konkreten Kuechenstil nicht direkt erkennen. Ist es fuer Sie wichtig, dass neue Gaeste das Angebot sofort einordnen koennen?",
+      "prohibited_claims": [
+        "Ihre Gaeste verstehen Ihr Restaurant nicht.",
+        "Das verschlechtert garantiert Ihre Buchungsrate."
+      ],
+      "terminology_level": "plain",
+      "hook_features": {
+        "likely_business_relevance": 0.75,
+        "phone_explainability": 0.9,
+        "actionability": 0.85,
+        "specificity": 0.9,
+        "sensitivity_risk": 0.1,
+        "technical_complexity": 0.05
+      }
+    },
+    {
+      "id": "F3",
+      "dimension": "discoverability",
+      "evidence_class": "HYPOTHESIS",
+      "observation": "Lokale Suchsichtbarkeit wurde in der Simulation nicht gemessen.",
+      "evidence_pointer": "not measured",
+      "confidence": 0.2,
+      "priority": "LOW",
+      "possible_relevance": "Lokale Auffindbarkeit kann relevant sein, wenn neue Gaeste ueber Suchmaschinen und Maps gewonnen werden sollen.",
+      "allowed_spoken_form": "Wir haben Ihre lokale Google-Sichtbarkeit hier nicht gemessen. Ist lokale Auffindbarkeit fuer Sie ueberhaupt ein relevantes Thema?",
+      "prohibited_claims": [
+        "Sie ranken schlecht bei Google.",
+        "Ihre Konkurrenz steht ueber Ihnen."
+      ],
+      "terminology_level": "plain",
+      "hook_features": {
+        "likely_business_relevance": 0.7,
+        "phone_explainability": 0.8,
+        "actionability": 0.6,
+        "specificity": 0.2,
+        "sensitivity_risk": 0.2,
+        "technical_complexity": 0.3
+      }
+    }
+  ],
+  "limitations": [
+    "Dies ist ausschliesslich eine synthetische Testfixture und kein Audit eines realen Restaurantbetriebs.",
+    "Keine Analytics-, Search-Console-, Ranking-, Reservierungs-, Umsatz- oder Conversion-Daten wurden verwendet.",
+    "Vor jedem realen Anruf muss ein prospect-spezifisches validiertes Audit Packet kompiliert werden."
+  ]
+}

@@ -1,0 +1,1 @@
+Guten Tag, hier ist der KI-Assistent von Pixelkiez. Wir haben uns Ihre Website in einem strukturierten Kurz-Check angesehen, und dabei ist uns ein konkreter Punkt aufgefallen. Haben Sie gerade etwa 30 Sekunden, damit ich Ihnen kurz sage, welcher?

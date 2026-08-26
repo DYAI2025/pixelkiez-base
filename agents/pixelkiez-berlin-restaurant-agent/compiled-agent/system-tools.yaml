@@ -1,0 +1,13 @@
+system_tools:
+  end_call:
+    platform_capability: PRIMARY_VERIFIED
+    usage: end after hard no, opt-out, or natural completion
+  update_state:
+    platform_capability: PRIMARY_VERIFIED
+    usage: update configured dynamic state when enabled
+  voicemail_detection:
+    platform_capability: PRIMARY_VERIFIED
+    deployment_status: UNVERIFIED
+  transfer_to_number:
+    platform_capability: PRIMARY_VERIFIED
+    deployment_status: UNVERIFIED
