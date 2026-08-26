@@ -1,0 +1,1 @@
+Guten Tag, hier ist Pixelkiez KI-Assistent, ein KI-Call-Agent von Pixelkiez. Ich rufe wegen eines konkreten Punkts aus einem strukturierten Website-Check an. Passt es gerade für etwa 30 Sekunden, damit ich kurz sage, was wir beobachtet haben?

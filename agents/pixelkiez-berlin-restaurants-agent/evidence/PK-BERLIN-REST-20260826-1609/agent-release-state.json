@@ -1,0 +1,31 @@
+{
+  "run_id": "PK-BERLIN-REST-20260826-1609",
+  "build_id": "PK-BERLIN-RESTAURANTS-20260826-SIM-001",
+  "current_state": "STATIC_VALIDATED",
+  "behavioral_execution_status": "NOT_EXECUTED",
+  "platform_execution_status": "NOT_EXECUTED",
+  "live_calling_authorization": "NOT_AUTHORIZED",
+  "history": [
+    {
+      "seq": 1,
+      "from": "INIT",
+      "to": "INPUTS_VALIDATED",
+      "reason": "all three domain input validators passed",
+      "timestamp": "2026-08-26T14:12:45.410372+00:00"
+    },
+    {
+      "seq": 2,
+      "from": "INPUTS_VALIDATED",
+      "to": "COMPILED",
+      "reason": "compiler completed with exit code 0",
+      "timestamp": "2026-08-26T14:12:47.939029+00:00"
+    },
+    {
+      "seq": 3,
+      "from": "COMPILED",
+      "to": "STATIC_VALIDATED",
+      "reason": "compiled agent package validator passed",
+      "timestamp": "2026-08-26T14:12:50.479958+00:00"
+    }
+  ]
+}

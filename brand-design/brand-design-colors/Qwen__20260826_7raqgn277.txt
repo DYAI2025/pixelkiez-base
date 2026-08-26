@@ -1,0 +1,13 @@
+┌─────────────────────────────────────────┐
+│  60% Sage Mint (#C4D4C8)                │
+│  → Dominanter Hintergrund               │
+│  → Schafft ruhige, positive Atmosphäre  │
+├─────────────────────────────────────────┤
+│  30% White (#FFFFFF)                    │
+│  → Inhaltsflächen, Karten               │
+│  → Lesbarkeit und Klarheit              │
+├─────────────────────────────────────────┤
+│  10% Pixel Orange (#E8573A)             │
+│  → Akzente, CTAs, wichtige Elemente     │
+│  → Energie und Handlungsaufforderung    │
+└─────────────────────────────────────────┘

@@ -1,0 +1,38 @@
+{
+  "build_id": "PK-BERLIN-RESTAURANTS-20260826-SIM-001",
+  "skill_name": "pixelkiez-adaptive-elevenlabs-appointment-agent-architect",
+  "files": [
+    "SYSTEM_PROMPT.md",
+    "FIRST_MESSAGE.md",
+    "dynamic-variables.json",
+    "audit-runtime-packet.json",
+    "industry-context.json",
+    "knowledge-base-manifest.md",
+    "pronunciation-candidates.md",
+    "system-tools.yaml",
+    "external-tools-contract.yaml",
+    "conversation-settings.md",
+    "eval-scenarios.json",
+    "release-report.md"
+  ],
+  "selected_hooks": [
+    {
+      "finding_id": "F1",
+      "evidence_class": "VERIFIED_FACT",
+      "selector_score": 0.93
+    },
+    {
+      "finding_id": "F2",
+      "evidence_class": "VERIFIED_FACT",
+      "selector_score": 0.8675
+    }
+  ],
+  "compliance_gate": "LEGAL_REVIEW_REQUIRED",
+  "live_calling_production_status": "BLOCKED_EXTERNAL",
+  "generated_at": "2026-08-26T14:12:47.512328+00:00",
+  "source_inputs": {
+    "audit_id": "AUD-PK-RESTAURANT-SIM-001",
+    "industry_verified_at": "2026-08-26",
+    "company_contract_version": "2026-08-26-public-plus-project-contract"
+  }
+}

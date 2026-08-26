@@ -1,0 +1,6 @@
+﻿Farbe,Name,HEX,RGB,Anteil,Verwendung
+🟢,Sage Mint,#C4D4C8,"(196, 212, 200)",~40%,"Primärer Hintergrund, Hauptflächen"
+⚪,Pure White,#FFFFFF,"(255, 255, 255)",~25%,"Karten, Textbereiche, Kontrastflächen"
+🟠,Pixel Orange,#E8573A,"(232, 87, 58)",~15%,"Akzente, Buttons, Hero-Bereich, CTAs"
+⚫,Deep Black,#1A1A1A,"(26, 26, 26)",~15%,"Footer, dunkle Sektionen, starker Kontrast"
+🔘,Neutral Grey,#6B6B6B,"(107, 107, 107)",~5%,"Sekundärtext, Meta-Informationen"

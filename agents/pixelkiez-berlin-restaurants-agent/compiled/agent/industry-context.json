@@ -1,0 +1,83 @@
+{
+  "industry": "Gastgewerbe",
+  "subindustry": "Restaurants und gastronomische Betriebe",
+  "market_region": "Berlin, Deutschland",
+  "business_model": "lokales B2C-Gastgewerbe mit Vor-Ort-Besuch; je nach Betrieb Reservierung, Events, Catering oder Abholung als ergänzende Wege",
+  "primary_customer_groups": [
+    "lokale Gäste",
+    "Berlin-Besucher",
+    "Gruppen und Anlassgäste, sofern für den Betrieb relevant",
+    "Geschäftsgäste, sofern für den Betrieb relevant"
+  ],
+  "buyer_roles": [
+    "Inhaber oder Geschäftsführung",
+    "Restaurantleitung",
+    "Marketingverantwortliche, sofern vorhanden"
+  ],
+  "website_jobs": [
+    "lokal gefunden werden",
+    "Restaurantkonzept und Küche schnell verstehen",
+    "Speisekarte, Preise und Öffnungszeiten leicht finden",
+    "Standort, Kontakt und Anfahrt schnell erfassen",
+    "direkten Reservierungsweg finden, sofern Reservierungen angeboten werden",
+    "Event- oder Catering-Anfrage starten, sofern angeboten",
+    "vertrauenswürdigen und aktuellen Eindruck vermitteln"
+  ],
+  "common_conversion_paths": [
+    "direkte Tischreservierung über Website oder angebundenes Reservierungssystem",
+    "telefonische Reservierung oder Rückfrage",
+    "Aufruf von Speisekarte und Öffnungszeiten",
+    "Routenplanung zum Restaurant",
+    "Event- oder Catering-Anfrage, sofern angeboten"
+  ],
+  "important_trust_signals": [
+    "aktuelle Öffnungszeiten und Kontaktdaten",
+    "klar erkennbare Küche und Restaurantpositionierung",
+    "aktuelle, mobil gut nutzbare Speisekarte",
+    "transparenter Reservierungsweg",
+    "konsistente Standort- und Kontaktdaten"
+  ],
+  "important_terminology": [
+    "Reservierung",
+    "Tischreservierung",
+    "Speisekarte",
+    "Öffnungszeiten",
+    "Direktreservierung",
+    "No-Show",
+    "Eventanfrage",
+    "Catering",
+    "Google Business Profile",
+    "lokale Auffindbarkeit",
+    "GEO",
+    "KI-Suche"
+  ],
+  "regulated_claims_or_sensitive_topics": [
+    "keine pauschalen Umsatz-, Reservierungs- oder Provisionsverluste behaupten",
+    "keine Ranking- oder Sichtbarkeitsaussagen ohne Messung",
+    "keine Aussagen zu Hygiene, Allergenen oder rechtlicher Compliance ohne belastbare Prüfung",
+    "keine Aussage, dass ein Betrieb von Plattformen abhängig ist, sofern das nicht belegt ist"
+  ],
+  "observable_market_triggers": [
+    "Reservierungsweg ist auf der Website sichtbar oder nicht sichtbar",
+    "Speisekarte ist als HTML, PDF oder Bild eingebunden",
+    "Öffnungszeiten und Kontaktwege sind öffentlich auffindbar",
+    "Event- oder Catering-Angebote sind öffentlich sichtbar",
+    "Website nennt einen Relaunch oder veraltete Inhalte",
+    "Prospect nennt selbst Plattformkosten, No-Shows, Auffindbarkeit oder Reservierungen als Thema"
+  ],
+  "website_relevance_hypotheses": [
+    "ein klarer direkter Reservierungsweg kann für Betriebe relevant sein, die Direktreservierungen steigern möchten",
+    "eine mobil lesbare HTML-Speisekarte kann die Nutzung für Gäste und die maschinelle Lesbarkeit erleichtern",
+    "klare Öffnungszeiten, Standort- und Kontaktdaten können Reibung vor dem Besuch reduzieren",
+    "Event- und Catering-Strecken können relevant sein, wenn der Betrieb solche Anfragen aktiv gewinnen möchte",
+    "strukturierte, konsistente Restaurantinformationen können für lokale und KI-gestützte Auffindbarkeit relevant sein"
+  ],
+  "source_refs": [
+    "https://pixelkiez.de/en/ (Hospitality, verified 2026-08-26)",
+    "https://dehoga-berlin.de/ (industry context, accessed 2026-08-26)",
+    "https://dehoga-berlin.de/partner-dehoga/dirs21-touronline/ (online booking context, accessed 2026-08-26)",
+    "https://www.statistik-berlin-brandenburg.de/g-iv-5-m/ (Berlin hospitality statistics, May 2026 release)"
+  ],
+  "confidence": 4,
+  "verified_at": "2026-08-26"
+}

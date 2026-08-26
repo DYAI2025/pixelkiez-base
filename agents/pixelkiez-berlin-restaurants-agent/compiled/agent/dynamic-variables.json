@@ -1,0 +1,17 @@
+{
+  "call_stage": "PRECALL_GATE",
+  "prospect_role": "Inhaber, Geschäftsführung oder Restaurantleitung",
+  "website_role": "Auffindbarkeit, Restaurantverständnis, Speisekarte, Kontakt und direkter Reservierungsweg",
+  "primary_customer_type": "B2C-Gäste; Gesprächspartner ist ein B2B-Restaurantbetrieb",
+  "lead_source_current": "campaign-lead-source-must-be-externally-approved-per-prospect",
+  "interest_level": "unknown",
+  "confirmed_relevance": false,
+  "meeting_readiness": "unknown",
+  "preferred_followup_time": null,
+  "opt_out": false,
+  "needs_human": false,
+  "prospect_company": "Restaurant Musterbetrieb Berlin (Simulation)",
+  "prospect_locale": "de-DE",
+  "compliance_status": "LEGAL_REVIEW_REQUIRED",
+  "do_not_contact": false
+}

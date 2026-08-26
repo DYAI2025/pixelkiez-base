@@ -1,0 +1,16 @@
+{
+  "package": "pixelkiez-berlin-restaurants-agent",
+  "generated_at": "2026-08-26T16:09:00+02:00",
+  "run_id": "PK-BERLIN-REST-20260826-1609",
+  "build_id": "PK-BERLIN-RESTAURANTS-20260826-SIM-001",
+  "agent_static_release_status": "STATIC_VALIDATED",
+  "behavioral_validation": "NOT_EXECUTED",
+  "platform_validation": "NOT_EXECUTED",
+  "live_calling_production_status": "BLOCKED_EXTERNAL",
+  "compliance_status": "LEGAL_REVIEW_REQUIRED",
+  "selected_simulation_hooks": ["F1", "F2"],
+  "notes": [
+    "The included prospect and audit are synthetic simulation data.",
+    "Every real restaurant requires a fresh prospect-specific validated audit and release receipt."
+  ]
+}

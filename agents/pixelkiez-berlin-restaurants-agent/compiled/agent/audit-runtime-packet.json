@@ -1,0 +1,46 @@
+{
+  "audit_id": "AUD-PK-RESTAURANT-SIM-001",
+  "company": "Restaurant Musterbetrieb Berlin (Simulation)",
+  "url": "https://restaurant-simulation.invalid",
+  "audit_date": "2026-08-26",
+  "method_scope": [
+    "synthetic simulation packet for restaurant-campaign agent compilation",
+    "not a real restaurant website audit"
+  ],
+  "score": {
+    "overall_score": null,
+    "score_scale": null,
+    "status": "NOT_USED"
+  },
+  "strengths": [
+    {
+      "id": "S1",
+      "observation": "SIMULATION: Öffnungszeiten und Anschrift sind im Hauptbereich der Musterseite sichtbar.",
+      "evidence_pointer": "synthetic-demo/homepage/contact-block",
+      "confidence": 1.0
+    }
+  ],
+  "selected_hooks": [
+    {
+      "finding_id": "F1",
+      "evidence_class": "VERIFIED_FACT",
+      "observation": "SIMULATION: Im ersten sichtbaren Bereich der Musterseite ist kein direkter Reservierungsweg erkennbar; der Reservierungslink befindet sich erst im Footer.",
+      "allowed_spoken_form": "Bei unserem Website-Check ist uns aufgefallen, dass der Reservierungsweg nicht direkt im ersten sichtbaren Bereich liegt, sondern erst weiter unten. Ist es für Sie wichtig, dass Gäste möglichst direkt über die eigene Website reservieren können?",
+      "possible_relevance": "Wenn direkte Reservierungen für den Betrieb wichtig sind, kann die Sichtbarkeit des Reservierungswegs geschäftlich relevant sein.",
+      "selector_score": 0.93
+    },
+    {
+      "finding_id": "F2",
+      "evidence_class": "VERIFIED_FACT",
+      "observation": "SIMULATION: Die Speisekarte der Musterseite ist ausschließlich als PDF verlinkt und nicht als direkt lesbarer HTML-Inhalt vorhanden.",
+      "allowed_spoken_form": "Ein zweiter Punkt: Die Speisekarte liegt bei Ihnen in unserem Mustercheck als PDF vor. Wenn Ihnen mobile Nutzung und Auffindbarkeit wichtig sind, wäre eine direkt lesbare Web-Speisekarte grundsätzlich ein Thema für Sie?",
+      "possible_relevance": "Eine direkt lesbare Speisekarte kann je nach Ziel des Betriebs für mobile Nutzung und maschinelle Lesbarkeit relevant sein.",
+      "selector_score": 0.8675
+    }
+  ],
+  "limitations": [
+    "This is a synthetic simulation audit, not a real restaurant audit.",
+    "No analytics, Search Console, ranking dataset, field performance data, reservation data, conversion data, platform fee data or revenue data were used.",
+    "Every real restaurant must receive its own validated audit packet before any website-specific claim is spoken."
+  ]
+}

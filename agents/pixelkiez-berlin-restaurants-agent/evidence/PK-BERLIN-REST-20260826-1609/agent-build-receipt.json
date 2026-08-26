@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "run_id": "PK-BERLIN-REST-20260826-1609",
+  "build_id": "PK-BERLIN-RESTAURANTS-20260826-SIM-001",
+  "created_at": "2026-08-26T14:12:50.480648+00:00",
+  "state": "STATIC_VALIDATED",
+  "inputs": {
+    "config": {
+      "name": "agent-build-config.json",
+      "sha256": "a4be3ab6fe60c28f2b6389e07407a4791fad3b4e7a3ecf47b836830319ff6c6d"
+    },
+    "industry": {
+      "name": "industry-context.json",
+      "sha256": "73ae107bea10491222cd129c0278dc361ff61db82310e326a043480a6636b608"
+    },
+    "audit": {
+      "name": "website-audit-packet.json",
+      "sha256": "d81d913b4b2a12583066fa0b5acaff50d011e8a13c49943e9b79f6d5ae743778"
+    }
+  },
+  "compiler": {
+    "name": "compile_agent_package.py",
+    "sha256": "809726d288904cdea6d16f57f832c170e4d55e6e1264df56739765a10ec3c632"
+  },
+  "compiled_output": {
+    "directory_name": "agent",
+    "tree_sha256": "fe3373027d50f9b8350345b54cda9278ab3c5f7f643d3d4f646713fe31bdd78b",
+    "file_count": 13
+  },
+  "execution_results": [
+    {
+      "id": "validate_build_config",
+      "target": "agent-build-config",
+      "exit_code": 0,
+      "status": "PASS",
+      "stdout_sha256": "bec5849a72ebd7f6154a7bd78dfa9a5662863627ffba5392f41b6696f296979a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "validate_industry_context",
+      "target": "industry-context",
+      "exit_code": 0,
+      "status": "PASS",
+      "stdout_sha256": "423763eebfbcbe38c33757a99085dd5cb1787689f3b3c090939035e685ac0efb",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "validate_audit_packet",
+      "target": "website-audit-packet",
+      "exit_code": 0,
+      "status": "PASS",
+      "stdout_sha256": "43948d84c47bc9724cd65fd30c122b0f91ee7cb12d8fb31c1a7409af00f921d8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "compile_agent_package",
+      "target": "compiled-agent-dir",
+      "exit_code": 0,
+      "status": "PASS",
+      "stdout_sha256": "c85a1c6ff238caeb9553912add637f9226fe258410c151c93b0bc713ab88bbd4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "validate_agent_package",
+      "target": "compiled-agent-dir",
+      "exit_code": 0,
+      "status": "PASS",
+      "stdout_sha256": "977b5665fd9040f2249341adf89144d4a7dfd8708f7effa3a74272f09a8c9c53",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "eval_evidence": {
+    "conversation_scenarios": {
+      "name": "conversation_scenarios.jsonl",
+      "sha256": "a9c2f19ef3739e0d2e870a9ac6723daf8cad6806c427100e71aefbe545d7d6d1",
+      "case_count": 31,
+      "execution_status": "NOT_EXECUTED_AS_AGENT_BEHAVIOR"
+    },
+    "release_harness_cases": {
+      "name": "release_harness_cases.json",
+      "sha256": "26e8b227f313dbe2ea59b73afa561bc3e7424b9e5c1d2910a33c963db4ddc543",
+      "case_count": 9,
+      "execution_status": "NOT_EXECUTED_AS_AGENT_BEHAVIOR"
+    }
+  },
+  "release_claims": {
+    "static_validation": "PASS",
+    "behavioral_validation": "NOT_EXECUTED",
+    "platform_validation": "NOT_EXECUTED",
+    "live_calling": "NOT_AUTHORIZED"
+  }
+}

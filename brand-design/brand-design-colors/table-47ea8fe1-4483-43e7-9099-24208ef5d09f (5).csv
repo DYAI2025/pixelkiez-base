@@ -1,0 +1,8 @@
+﻿Element,Größe,Gewicht,Farbe,Verwendung
+H1,48-64px,Bold (700),#1A1A1A,Hauptüberschriften
+H2,32-40px,Bold (700),#1A1A1A,Sektionstitel
+H3,24-28px,SemiBold (600),#1A1A1A,Unterüberschriften
+Body Large,18px,Regular (400),#2A2A2A,Einleitungstexte
+Body,16px,Regular (400),#2A2A2A,Fließtext
+Caption,14px,Medium (500),#6B6B6B,"Labels, Meta"
+Small,12px,Regular (400),#6B6B6B,"Fußnoten, Details"
