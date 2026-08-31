@@ -1,0 +1,97 @@
+{
+  "baseline_id": "JULIA-BASELINE-2026-08-31-PXK-4",
+  "jira_issue": "PXK-4",
+  "parent_epic": "PXK-3",
+  "repository": "DYAI2025/pixelkiez-base",
+  "base_ref": "master",
+  "base_sha": "ca33fa5a4ab8170f62f6ea236689cbfc5b4a0853",
+  "work_branch": "pxk-4-julia-baseline-freeze",
+  "freeze_date": "2026-08-31",
+  "timezone": "Europe/Berlin",
+  "baseline_scope": "prompt_policy_and_behavior_reference",
+  "provider_exact_reproduction": false,
+  "provider_exact_reproduction_status": "BLOCKED_SOURCE_NEEDED",
+  "sources": [
+    {
+      "id": "JULIA_PROMPT_20260831",
+      "type": "user_provided_file",
+      "title": "Eingefügter Text.txt",
+      "file_reference": "file_000000005da482118c83147f45f1c69f",
+      "created_at": "2026-08-31T11:25:42Z",
+      "status": "USER_PROVIDED_INSPECTED",
+      "purpose": "current supplied Julia system-prompt baseline"
+    },
+    {
+      "id": "S021",
+      "type": "user_provided_conversation",
+      "title": "first conversation behavior test",
+      "date": "2026-08-28",
+      "status": "USER_STATED_PARTIAL_FIXTURE",
+      "purpose": "preferred behavior / Golden Conversation reference"
+    },
+    {
+      "id": "PXKEV_02",
+      "type": "confluence",
+      "page_id": "40632321",
+      "title": "02 – Transcript Review: Abweichungen und Agent-Guardrails",
+      "status": "VERIFIED_READBACK",
+      "purpose": "current reviewed regression transcript findings and positive baseline traits"
+    },
+    {
+      "id": "VOICE_ARCHITECT_SOURCE_MAP",
+      "type": "installed_skill_source_map",
+      "status": "INSPECTED",
+      "purpose": "records S021 and current agent architecture evidence discipline"
+    }
+  ],
+  "protected_traits": [
+    "explicit_ai_identity",
+    "spoken_naturalness",
+    "short_phone_appropriate_answers",
+    "turn_contingency",
+    "clarification_and_simplification",
+    "professional_drift_recovery",
+    "warmth_without_manipulation",
+    "one_main_question_per_turn",
+    "correction_invitation",
+    "hard_no_respect"
+  ],
+  "known_baseline_defects_not_to_preserve": [
+    "fake_human_origin_or_biography",
+    "automatic_employee_name_disclosure",
+    "unsupported_visibility_or_ranking_claims",
+    "unsupported_or_unbound_pricing_claims",
+    "fake_action_or_booking_claims",
+    "positive_reinforcement_of_sexualized_comments",
+    "unverified_persistence_of_playful_identity_data",
+    "blank_runtime_placeholder_speech"
+  ],
+  "provider_fields": {
+    "agent_id": "SOURCE_NEEDED",
+    "agent_version_or_branch_id": "SOURCE_NEEDED",
+    "first_message_provider_value": "SOURCE_NEEDED",
+    "voice_id": "SOURCE_NEEDED",
+    "voice_model_and_parameters": "SOURCE_NEEDED",
+    "llm_model_and_generation_parameters": "SOURCE_NEEDED",
+    "turn_interruption_silence_settings": "SOURCE_NEEDED",
+    "active_dynamic_variable_binding": "SOURCE_NEEDED",
+    "knowledge_base": "SOURCE_NEEDED",
+    "tools": "SOURCE_NEEDED",
+    "procedures_or_workflows": "SOURCE_NEEDED",
+    "success_evaluations": "SOURCE_NEEDED",
+    "provider_tests_and_results": "SOURCE_NEEDED",
+    "security_and_override_settings": "SOURCE_NEEDED"
+  },
+  "shared_batch_contract": {
+    "project_default": "v1.3",
+    "total_fields": 96,
+    "custom_dynamic_variable_slots": 95,
+    "active_provider_binding": "SOURCE_NEEDED"
+  },
+  "release_implications": {
+    "behavior_tested": false,
+    "provider_validated": false,
+    "live_call_authorized": false,
+    "legal_eligibility_proven": false
+  }
+}
