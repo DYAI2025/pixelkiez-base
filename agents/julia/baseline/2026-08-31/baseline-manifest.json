@@ -1,16 +1,27 @@
 {
   "baseline_id": "JULIA-BASELINE-2026-08-31-PXK-4",
   "jira_issue": "PXK-4",
+  "reconciliation_issue": "PXK-88",
   "parent_epic": "PXK-3",
   "repository": "DYAI2025/pixelkiez-base",
   "base_ref": "master",
   "base_sha": "ca33fa5a4ab8170f62f6ea236689cbfc5b4a0853",
   "work_branch": "pxk-4-julia-baseline-freeze",
+  "pre_reconciliation_head": "ee028de6625333a8b6b679f5ac27e7688940bc84",
   "freeze_date": "2026-08-31",
+  "provider_snapshot_date": "2026-09-01",
+  "reconciled_date": "2026-09-30",
   "timezone": "Europe/Berlin",
-  "baseline_scope": "prompt_policy_and_behavior_reference",
+  "baseline_scope": "prompt_policy_behavior_reference_and_provider_core_snapshot",
   "provider_exact_reproduction": false,
-  "provider_exact_reproduction_status": "BLOCKED_SOURCE_NEEDED",
+  "provider_exact_reproduction_status": "PARTIAL_SOURCE_NEEDED",
+  "provider_core_status": "VERIFIED_SNAPSHOT",
+  "target_repository": {
+    "repository": "DYAI2025/Julia-agent-harness",
+    "ref": "main",
+    "sha": "db6dc536880ad00aa30f7abca66a70ea40a4a724",
+    "role": "future_implementation_target_no_change_in_pxk_88"
+  },
   "sources": [
     {
       "id": "JULIA_PROMPT_20260831",
@@ -42,6 +53,35 @@
       "type": "installed_skill_source_map",
       "status": "INSPECTED",
       "purpose": "records S021 and current agent architecture evidence discipline"
+    },
+    {
+      "id": "PXKEV_08",
+      "type": "confluence",
+      "page_id": "40861697",
+      "page_version": 2,
+      "title": "08 – PXK-4 Julia Baseline Freeze – Evidence & Blocker",
+      "status": "VERIFIED_READBACK",
+      "purpose": "PXK-4 gate and list of remaining SOURCE_NEEDED surfaces"
+    },
+    {
+      "id": "PXKEV_09",
+      "type": "confluence",
+      "page_id": "41713665",
+      "page_version": 2,
+      "title": "09 – Julia aktuelle ElevenLabs Provider-Konfiguration",
+      "status": "VERIFIED_READBACK",
+      "purpose": "field-level provider snapshot of the 2026-09-01 read-only ElevenLabs agent read"
+    },
+    {
+      "id": "ELEVENLABS_PROVIDER_READ_20260901",
+      "type": "provider_read",
+      "provider": "ElevenLabs",
+      "operation": "get_agent_config",
+      "agent_id": "agent_9501m0xnatwqfne90mcst6kb1wj8",
+      "date": "2026-09-01",
+      "status": "USER_PROVIDED_PROVIDER_READ_READ_ONLY",
+      "raw_export_in_repository": false,
+      "purpose": "provider-core values, recorded on PXKEV 09"
     }
   ],
   "protected_traits": [
@@ -64,30 +104,144 @@
     "fake_action_or_booking_claims",
     "positive_reinforcement_of_sexualized_comments",
     "unverified_persistence_of_playful_identity_data",
-    "blank_runtime_placeholder_speech"
+    "blank_runtime_placeholder_speech",
+    "static_first_message_salutation"
   ],
   "provider_fields": {
-    "agent_id": "SOURCE_NEEDED",
-    "agent_version_or_branch_id": "SOURCE_NEEDED",
-    "first_message_provider_value": "SOURCE_NEEDED",
-    "voice_id": "SOURCE_NEEDED",
-    "voice_model_and_parameters": "SOURCE_NEEDED",
-    "llm_model_and_generation_parameters": "SOURCE_NEEDED",
-    "turn_interruption_silence_settings": "SOURCE_NEEDED",
-    "active_dynamic_variable_binding": "SOURCE_NEEDED",
-    "knowledge_base": "SOURCE_NEEDED",
-    "tools": "SOURCE_NEEDED",
-    "procedures_or_workflows": "SOURCE_NEEDED",
-    "success_evaluations": "SOURCE_NEEDED",
+    "agent_id": "agent_9501m0xnatwqfne90mcst6kb1wj8",
+    "agent_version_or_branch_id": {
+      "main_branch": "agtbrch_7501m0xnavnjf9k9y583cgybgf9g",
+      "current_branch": "agtbrch_7501m0xnavnjf9k9y583cgybgf9g",
+      "current_version": "agtvrsn_4001m1cgzbrtfky9v6nmknyknpe2",
+      "status": "VERIFIED_SNAPSHOT"
+    },
+    "first_message_provider_value": {
+      "value": "Schönen guten Tag Herr Schnetzer! Das freut mich, dass ich Sie erreiche. Mein Name ist Julia und ich bin eine KI Sprachagentin. Ich arbeite für die Agentur PixelKiez aus Berlin, sagt Ihnen unser Name was?",
+      "status": "VERIFIED_SNAPSHOT_DEFECT_PRESERVED"
+    },
+    "voice_id": "6u6JbqKdaQy89ENzLSju",
+    "voice_model_and_parameters": {
+      "tts_model": "eleven_v3_conversational",
+      "expressive_mode": true,
+      "stability": 0.46,
+      "speed": 1.04,
+      "similarity_boost": 0.8,
+      "streaming_latency_optimization": 3,
+      "output_audio": "pcm_16000",
+      "text_normalisation": "system_prompt",
+      "style": "SOURCE_NEEDED",
+      "voice_filter": "SOURCE_NEEDED",
+      "status": "VERIFIED_SNAPSHOT"
+    },
+    "llm_model_and_generation_parameters": {
+      "llm": "gemini-3.7-flash",
+      "reasoning_effort": "low",
+      "temperature": 0.66,
+      "max_tokens": -1,
+      "cascade_timeout": "4s",
+      "backup_llms": ["gemini-2.5-flash", "qwen35-397b-a17b"],
+      "status": "VERIFIED_SNAPSHOT"
+    },
+    "system_prompt_provider_state": {
+      "approximate_length_chars": 22658,
+      "repository_prompt_body_chars": 23046,
+      "byte_equality_established": false,
+      "status": "PARTIALLY_SUPPORTED"
+    },
+    "turn_interruption_silence_settings": {
+      "asr_provider": "scribe_realtime",
+      "turn_model": "turn_v3",
+      "turn_timeout": "7s",
+      "turn_eagerness": "normal",
+      "speculative_turn": true,
+      "silence_end_call_timeout": -1,
+      "soft_timeout_seconds": -1,
+      "max_duration": "600s",
+      "interruption_thresholds": "SOURCE_NEEDED",
+      "status": "VERIFIED_SNAPSHOT"
+    },
+    "active_dynamic_variable_binding": {
+      "provider_placeholder_count": 15,
+      "defaults": "all_empty",
+      "runtime_population_path": "SOURCE_NEEDED",
+      "status": "PARTIALLY_SUPPORTED"
+    },
+    "knowledge_base": {
+      "bound_resources": 8,
+      "rag_enabled": true,
+      "embedding_model": "multilingual_e5_large_instruct",
+      "resource_ids_and_digests": "SOURCE_NEEDED",
+      "status": "PARTIALLY_SUPPORTED"
+    },
+    "tools": {
+      "tool_ids": [],
+      "legacy_tools": [],
+      "built_in_tools": "all_null",
+      "mcp_server_ids": [],
+      "native_mcp_server_ids": [],
+      "status": "VERIFIED_EMPTY_SNAPSHOT"
+    },
+    "procedures_or_workflows": {
+      "workflow": "none_found",
+      "procedures": "SOURCE_NEEDED",
+      "status": "SOURCE_NEEDED"
+    },
+    "guardrails": {
+      "enabled": ["focus", "prompt_injection"],
+      "detail_mode_and_thresholds": "SOURCE_NEEDED",
+      "status": "PARTIALLY_SUPPORTED"
+    },
+    "success_evaluations": {
+      "value": [],
+      "data_collection": [],
+      "status": "VERIFIED_EMPTY_SNAPSHOT"
+    },
     "provider_tests_and_results": "SOURCE_NEEDED",
-    "security_and_override_settings": "SOURCE_NEEDED"
+    "security_and_override_settings": "SOURCE_NEEDED",
+    "telephony_and_channel_binding": "SOURCE_NEEDED",
+    "traffic_allocation": "SOURCE_NEEDED",
+    "privacy_retention_recording": "SOURCE_NEEDED",
+    "call_limits": "SOURCE_NEEDED"
   },
+  "remaining_source_needed": [
+    "traffic_allocation",
+    "telephony_phone_twilio_sip_binding",
+    "inbound_outbound_channel_binding",
+    "agent_authentication_signed_urls",
+    "allowlists",
+    "allowed_runtime_overrides",
+    "privacy_retention",
+    "recording",
+    "call_limits",
+    "guardrail_detail_mode_thresholds",
+    "voice_filter",
+    "procedure_list_dedicated_read",
+    "julia_specific_provider_tests_dedicated_read",
+    "dynamic_variable_runtime_population_path",
+    "knowledge_base_resource_ids_and_digests",
+    "interruption_thresholds",
+    "immutable_raw_prompt_and_first_message_export"
+  ],
   "shared_batch_contract": {
     "project_default": "v1.3",
     "total_fields": 96,
     "custom_dynamic_variable_slots": 95,
-    "active_provider_binding": "SOURCE_NEEDED"
+    "active_provider_binding": "15_provider_placeholders_contract_drift_open"
   },
+  "artifact_digests_sha256": {
+    "prompt-baseline.md": "f58893de5d343e342b4cc32e6c38023f1f6c38fff77fe3d970c8a514ebd8e1c5",
+    "golden-conversation-set.md": "502c2df3deb6a99dabb36eb7cc6ad0294e9ccc2955680495162807e57f732503",
+    "regression-fixtures.md": "200f45f0a64ef4c88d9163a893f52a3e84d280cb325bbe22507c59c7dd02da8b",
+    "provider-settings-inventory.md": "619dbd85f2c056aa7152acf4d952a0d117b11925956736aeb5236df45661959e"
+  },
+  "authorities": {
+    "repair_requirements": "PXK-6",
+    "acceptance_and_release_gate": "PXK-7",
+    "provider_neutral_implementation": "PXK-93"
+  },
+  "open_po_decisions": [
+    "repository_visibility_pixelkiez_base_and_julia_agent_harness"
+  ],
   "release_implications": {
     "behavior_tested": false,
     "provider_validated": false,
