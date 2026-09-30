@@ -6,7 +6,7 @@ Parent authorities: PXK-3 / PXK-78 / PXK-79
 Donor repository: `DYAI2025/pixelkiez-base`  
 Branch: `pxk-4-julia-baseline-freeze`  
 Base: `master @ ca33fa5a4ab8170f62f6ea236689cbfc5b4a0853`  
-Initial reconciled PR head: `ee028de6625333a8b6b679f5ac27e7688940bc84`  
+Pre-reconciliation PR head: `ee028de6625333a8b6b679f5ac27e7688940bc84`  
 Target repository binding: `DYAI2025/Julia-agent-harness`, `main @ db6dc536880ad00aa30f7abca66a70ea40a4a724`  
 Freeze date: 2026-08-31 Europe/Berlin  
 Provider snapshot date: 2026-09-01  
@@ -32,6 +32,7 @@ It is not a repaired prompt, a complete provider/workspace export, or proof of r
 | LLM/provider core | `VERIFIED_SNAPSHOT` | PXKEV 09 v2 |
 | Voice/TTS and ASR | `VERIFIED_SNAPSHOT` | PXKEV 09 v2 |
 | Turn-taking core | `VERIFIED_SNAPSHOT` | PXKEV 09 v2 |
+| Guardrails enabled | `VERIFIED_SNAPSHOT` | PXKEV 09 v2: `focus`, `prompt_injection` |
 | Interruption/guardrail detail thresholds | `SOURCE_NEEDED` | not present in the provider read |
 | Dynamic Variables | `PARTIALLY_SUPPORTED` | 15 placeholders verified; runtime population path not verified |
 | Knowledge Base / RAG | `PARTIALLY_SUPPORTED` | eight bindings and RAG core verified; immutable resource IDs/digests not captured |
@@ -40,8 +41,9 @@ It is not a repaired prompt, a complete provider/workspace export, or proof of r
 | MCP bindings | `VERIFIED_EMPTY_SNAPSHOT` | `mcp_server_ids=[]`, `native_mcp_server_ids=[]` |
 | Active Procedures | `SOURCE_NEEDED` | dedicated Procedure read not available |
 | Provider Success Evaluations | `VERIFIED_EMPTY_SNAPSHOT` | `[]` in the provider read |
+| Provider Data Collection | `VERIFIED_EMPTY_SNAPSHOT` | `[]` in the provider read |
 | Julia-specific provider tests | `SOURCE_NEEDED` | dedicated agent-test read required; global-list absence is not proof |
-| Security/telephony/override/retention surface | `SOURCE_NEEDED` | not reliably exposed by the provider read |
+| Security/telephony/override/retention surface | `SOURCE_NEEDED` | not reliably exposed by the provider read: traffic allocation, telephony/channel binding, authentication, allowlists, overrides, retention, recording, call limits, voice filter |
 
 ## Frozen artifacts
 
@@ -57,6 +59,8 @@ It is not a repaired prompt, a complete provider/workspace export, or proof of r
 `DYAI2025/pixelkiez-base / agents/julia/baseline/2026-08-31` is donor and baseline evidence.
 
 `DYAI2025/Julia-agent-harness @ db6dc536880ad00aa30f7abca66a70ea40a4a724` is the future implementation target. PXK-88 does not add harness implementation there.
+
+The full source map, the field-by-field promotion matrix, the remaining gaps and the SHA-256 digests are in `provider-snapshot-reconciliation.md`. Repository visibility of both repositories is an open PO decision recorded there; PXK-88 does not change it.
 
 ## Protected conversation DNA
 
