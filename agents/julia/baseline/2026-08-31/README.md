@@ -1,44 +1,66 @@
-# Julia Baseline Freeze — 2026-08-31
+# Julia Baseline Freeze - 2026-08-31
 
-Jira: PXK-4  
-Parent Epic: PXK-3  
+Jira baseline authority: PXK-4  
+Jira reconciliation: PXK-88  
+Parent authorities: PXK-3 / PXK-78 / PXK-79  
+Donor repository: `DYAI2025/pixelkiez-base`  
 Branch: `pxk-4-julia-baseline-freeze`  
-Base repository state: `DYAI2025/pixelkiez-base@ca33fa5a4ab8170f62f6ea236689cbfc5b4a0853`  
-Freeze timestamp: 2026-08-31 Europe/Berlin
+Base: `master @ ca33fa5a4ab8170f62f6ea236689cbfc5b4a0853`  
+Initial reconciled PR head: `ee028de6625333a8b6b679f5ac27e7688940bc84`  
+Target repository binding: `DYAI2025/Julia-agent-harness`, `main @ db6dc536880ad00aa30f7abca66a70ea40a4a724`  
+Freeze date: 2026-08-31 Europe/Berlin  
+Provider snapshot date: 2026-09-01  
+Reconciled: 2026-09-30
 
 ## Purpose
 
-This directory freezes the **evidence-supported Julia behavior baseline before Guardrail Repair**.
+This directory freezes the evidence-supported Julia behavior baseline before Guardrail Repair and binds the later read-only ElevenLabs provider-core snapshot without changing Julia behavior.
 
-It is intentionally **not** a repaired prompt and **not** proof of the active ElevenLabs provider configuration.
+It is not a repaired prompt, a complete provider/workspace export, or proof of runtime behavior.
 
 ## Truth status
 
 | Surface | Status | Evidence |
 |---|---|---|
-| Julia system-prompt content | `USER_PROVIDED_INSPECTED` | File Library source `Eingefügter Text.txt`, created 2026-08-31 |
+| Julia normalized system-prompt content | `USER_PROVIDED_INSPECTED` | `prompt-baseline.md`; source file reference `file_000000005da482118c83147f45f1c69f` |
+| Provider system-prompt state | `PARTIALLY_SUPPORTED` | PXKEV 09 records a full read and approximate length; no immutable raw provider export is stored here |
 | Prompt behavioral intent | `VERIFIED_FROM_SUPPLIED_PROMPT` | identity, mission, evidence rules, responsiveness, objection handling, hard-no policy |
 | Preferred conversation behavior | `USER_STATED / PARTIAL_FIXTURE` | Architect source-map S021, user-provided first conversation behavior test, 2026-08-28 |
-| Current problematic conversation | `USER_PROVIDED_REVIEWED` | PXKEV Confluence page `02 – Transcript Review: Abweichungen und Agent-Guardrails` |
-| ElevenLabs agent ID | `SOURCE_NEEDED` | no provider connection in current execution environment |
-| ElevenLabs branch/version ID | `SOURCE_NEEDED` | no provider connection in current execution environment |
-| ElevenLabs voice ID/model | `SOURCE_NEEDED` | no provider connection in current execution environment |
-| Turn/interruption/latency settings | `SOURCE_NEEDED` | no provider connection in current execution environment |
-| Active Procedures | `SOURCE_NEEDED` | no provider connection in current execution environment |
-| Active Tools | `SOURCE_NEEDED` | no provider connection in current execution environment |
-| First Message configured in provider UI | `SOURCE_NEEDED` | supplied prompt contains an opening example, but provider First Message surface is not verified |
+| Current problematic conversation | `USER_PROVIDED_REVIEWED` | PXKEV 02, page `40632321` |
+| Agent identity and version | `VERIFIED_SNAPSHOT` | PXKEV 09 v2, page `41713665` |
+| First Message | `VERIFIED_SNAPSHOT / DEFECT_PRESERVED` | PXKEV 09 v2; static `Herr Schnetzer` value is recorded, not repaired |
+| LLM/provider core | `VERIFIED_SNAPSHOT` | PXKEV 09 v2 |
+| Voice/TTS and ASR | `VERIFIED_SNAPSHOT` | PXKEV 09 v2 |
+| Turn-taking core | `VERIFIED_SNAPSHOT` | PXKEV 09 v2 |
+| Interruption/guardrail detail thresholds | `SOURCE_NEEDED` | not present in the provider read |
+| Dynamic Variables | `PARTIALLY_SUPPORTED` | 15 placeholders verified; runtime population path not verified |
+| Knowledge Base / RAG | `PARTIALLY_SUPPORTED` | eight bindings and RAG core verified; immutable resource IDs/digests not captured |
+| Standalone/Webhook tools | `VERIFIED_EMPTY_SNAPSHOT` | `tool_ids=[]`, legacy tools `[]` |
+| Built-in tools | `VERIFIED_NULL_SNAPSHOT` | read built-ins were `null` |
+| MCP bindings | `VERIFIED_EMPTY_SNAPSHOT` | `mcp_server_ids=[]`, `native_mcp_server_ids=[]` |
+| Active Procedures | `SOURCE_NEEDED` | dedicated Procedure read not available |
+| Provider Success Evaluations | `VERIFIED_EMPTY_SNAPSHOT` | `[]` in the provider read |
+| Julia-specific provider tests | `SOURCE_NEEDED` | dedicated agent-test read required; global-list absence is not proof |
+| Security/telephony/override/retention surface | `SOURCE_NEEDED` | not reliably exposed by the provider read |
 
 ## Frozen artifacts
 
-- `prompt-baseline.md` — normalized snapshot of the supplied Julia prompt used as the baseline reference.
-- `golden-conversation-set.md` — protected conversation qualities and known positive fixture references.
-- `regression-fixtures.md` — known negative/current regression cases that must stay reproducible.
-- `provider-settings-inventory.md` — explicit provider-only settings that remain unavailable rather than guessed.
-- `baseline-manifest.json` — machine-readable baseline metadata and truth labels.
+- `prompt-baseline.md` - normalized snapshot of the supplied Julia prompt.
+- `golden-conversation-set.md` - protected conversation qualities and positive fixture references.
+- `regression-fixtures.md` - known pre-repair failure cases.
+- `provider-settings-inventory.md` - field-level provider snapshot and evidence boundaries.
+- `provider-snapshot-reconciliation.md` - PXK-88 source map, promotion matrix, digests, and remaining gaps.
+- `baseline-manifest.json` - machine-readable baseline metadata and truth labels.
+
+## Source and target map
+
+`DYAI2025/pixelkiez-base / agents/julia/baseline/2026-08-31` is donor and baseline evidence.
+
+`DYAI2025/Julia-agent-harness @ db6dc536880ad00aa30f7abca66a70ea40a4a724` is the future implementation target. PXK-88 does not add harness implementation there.
 
 ## Protected conversation DNA
 
-The Guardrail Repair must preserve, unless an explicit test shows a conflict with truth/safety:
+The later Guardrail Repair must preserve, unless an explicit test shows a conflict with truth or safety:
 
 1. natural spoken German rather than script-reading;
 2. short, phone-appropriate answers;
@@ -51,25 +73,25 @@ The Guardrail Repair must preserve, unless an explicit test shows a conflict wit
 9. permission for correction and disagreement;
 10. hard-no respect.
 
-## Known baseline defects — frozen, not repaired here
+## Known baseline defects - frozen, not repaired here
 
-PXK-4 deliberately records these without changing them:
-
+- static `Herr Schnetzer` provider First Message;
 - fake human-biography framing around the Swabian/Stuttgart accent;
-- `consultant_name` is directly exposed in runtime/handoff wording;
-- some handoff examples name a consultant automatically;
-- no verified provider booking/tool configuration is captured;
-- the reviewed transcript contains unsupported visibility/pricing/action claims despite prompt-level guardrails;
-- personal/sexual boundary handling was too positively reinforcing before redirection.
+- automatic employee/owner-name disclosure risk;
+- unsupported visibility, ranking, pricing, or action claims;
+- no verified booking/CRM/mail tools despite action language;
+- positive reinforcement of sexualized comments;
+- unverified persistence of playful identity data;
+- blank runtime-placeholder speech.
 
-These belong to PXK-6, not PXK-4.
+These remain repair requirements. PXK-6 owns the repair requirements, PXK-7 owns acceptance/release-gate semantics, and PXK-93 is the later provider-neutral implementation slice.
 
 ## Reproducibility boundary
 
-This freeze is reproducible for **prompt-/policy-level evaluation** using the files in this directory.
+The prompt/policy and reference artifacts are frozen. The provider-core state is snapshot-bound and materially more complete than the initial PR, but complete provider-exact reproduction remains false because channel, security, runtime-population, Procedure, test, and other workspace surfaces remain unresolved.
 
-It is **not yet reproducible for provider-level voice/conversation behavior** because the exact active ElevenLabs agent configuration cannot be read from the currently connected tools. Provider-level reproduction remains blocked until the exact agent configuration is exported or API-read and then added as immutable evidence.
+Missing visibility is never interpreted as `false` or disabled.
 
 ## No release implication
 
-This baseline freeze does not authorize live outbound calling, does not establish legal eligibility, and does not prove behavioral/platform validation.
+This baseline does not prove behavior, provider deployment, tool execution, live calling, legal eligibility, production readiness, or completion of the Julia harness.
